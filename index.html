@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nguyễn Hồng Trang - JS buổi 16</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- ===========================Bài 1=============================== -->
+    <div class="card w-50 mx-auto my-5">
+      <div class="card-header">
+        <h1>Bài 1 - Tìm số nguyên dương nhỏ nhất</h1>
+      </div>
+      <div class="card-body">
+        <p>Tìm số nguyên dương nhỏ nhất sao cho:</p>
+        <p>1 + 2 + ... + n > 10000</p>
+        <div class="px-auto">
+          <button class="btn btn-success" onclick="minNumb()">Kết quả</button>
+        </div>
+      </div>
+
+      <div
+        class="alert alert-success mb-0"
+        style="display: none"
+        id="result"
+      ></div>
+    </div>
+
+    <!-- ===========================Bài 2=============================== -->
+    <div class="card w-50 mx-auto my-5">
+      <div class="card-header">
+        <h1>Bài 2 - Tính tổng mũ</h1>
+      </div>
+      <div class="card-body">
+        <p>Tính tổng: S(n) = x + x^2 + x^3 + ... + x^n</p>
+        <input
+          type="text"
+          placeholder="Nhập số x"
+          id="inputX"
+          class="form-control mb-3"
+        />
+        <input
+          type="text"
+          placeholder="Nhập số n"
+          id="inputN"
+          class="form-control"
+        />
+        <div class="px-auto mt-3">
+          <button class="btn btn-success" onclick="sum()">Kết quả</button>
+        </div>
+      </div>
+
+      <div
+        class="alert alert-success mb-0"
+        style="display: none"
+        id="sumResult"
+      ></div>
+    </div>
+
+    <!-- ===========================Bài 3=============================== -->
+    <div class="card w-50 mx-auto my-5">
+      <div class="card-header">
+        <h1>Bài 3 - Tính giai thừa</h1>
+      </div>
+      <div class="card-body">
+        <p>Tính giai thừa: 1*2*...n</p>
+        <input
+          type="text"
+          placeholder="Nhập số"
+          id="inputFactorial"
+          class="form-control"
+        />
+        <div class="px-auto mt-3">
+          <button class="btn btn-success" onclick="sumFactorial()">Kết quả</button>
+        </div>
+      </div>
+
+      <div
+        class="alert alert-success mb-0"
+        style="display: none"
+        id="factorialResult"
+      ></div>
+    </div>
+
+ <!-- ===========================Bài 4=============================== -->
+ <div class="card w-50 mx-auto my-5">
+  <div class="card-header">
+    <h1>Bài 4 - Tạo div</h1>
+  </div>
+  <div class="card-body" id="divBox">
+   
+    <div class="px-auto my-3">
+      <button class="btn btn-success" onclick="createDiv()">Tạo div</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===========================Bài 5=============================== -->
+<div class="card w-50 mx-auto my-5">
+  <div class="card-header">
+    <h1>Bài 5 - In số nguyên tố</h1>
+  </div>
+  <div class="card-body">
+    <p>In các số nguyên tố từ 1 tới giá trị ô input</p>
+    <input
+      type="text"
+      placeholder="Nhập số"
+      id="inputPrimeNumb"
+      class="form-control"
+    />
+    <div class="px-auto mt-3">
+      <button class="btn btn-success" onclick="getPrimeNumb()">Kết quả</button>
+    </div>
+  </div>
+
+  <div
+    class="alert alert-success mb-0"
+    style="display: none"
+    id="primeNumbResult"
+  ></div>
+</div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
